@@ -1,0 +1,6 @@
+{
+  "name": "Mazdoor Khata",
+  "description": "Smart worker attendance, daily wage ledger, advance (peshgi) tracking, and WhatsApp payslips for contractors and supervisors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#f59e0b" stroke-width="8" stroke-opacity="0.25"/>
+  <g transform="translate(96, 96)">
+    <!-- Hardhat outline -->
+    <path d="M 160 30 C 70 30 16 95 16 180 L 16 200 C 16 206 20 210 26 210 L 294 210 C 300 210 304 206 304 200 L 304 180 C 304 95 250 30 160 30 Z" fill="url(#amberGrad)"/>
+    <!-- Hardhat brim -->
+    <path d="M 0 200 C 0 195 4 190 10 190 L 310 190 C 316 190 320 195 320 200 C 320 220 290 230 160 230 C 30 230 0 220 0 200 Z" fill="#b45309"/>
+    <!-- Top crest ridge -->
+    <rect x="145" y="20" width="30" height="170" rx="10" fill="#fef3c7" opacity="0.6"/>
+    <!-- Ledger symbol -->
+    <rect x="90" y="250" width="140" height="40" rx="8" fill="#f59e0b" opacity="0.9"/>
+    <rect x="110" y="265" width="40" height="10" rx="3" fill="#0f172a"/>
+    <rect x="160" y="265" width="50" height="10" rx="3" fill="#0f172a"/>
+  </g>
+</svg>

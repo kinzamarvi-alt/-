@@ -107,7 +107,7 @@ export const LaborCalculatorModal: React.FC<LaborCalculatorModalProps> = ({
                 </label>
                 <input
                   type="number"
-                  step="50"
+                  step="any"
                   value={dailyRate}
                   onChange={(e) => setDailyRate(Number(e.target.value))}
                   className="w-full bg-slate-950 border border-slate-800 focus:border-amber-500 rounded-xl px-3 py-2 text-sm font-mono font-bold text-white focus:outline-none"
@@ -199,7 +199,7 @@ export const LaborCalculatorModal: React.FC<LaborCalculatorModalProps> = ({
               </label>
               <input
                 type="number"
-                step="1000"
+                step="any"
                 value={totalContract}
                 onChange={(e) => setTotalContract(Number(e.target.value))}
                 className="w-full bg-slate-950 border border-slate-800 focus:border-amber-500 rounded-xl px-3 py-2 text-lg font-mono font-extrabold text-white focus:outline-none"

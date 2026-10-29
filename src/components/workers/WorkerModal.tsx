@@ -306,9 +306,9 @@ export const WorkerModal: React.FC<WorkerModalProps> = ({
                 <input
                   type="number"
                   min="0"
-                  step="50"
-                  value={dailyWage}
-                  onChange={(e) => handleDailyWageChange(Number(e.target.value))}
+                  step="any"
+                  value={dailyWage || ''}
+                  onChange={(e) => handleDailyWageChange(e.target.value === '' ? 0 : Number(e.target.value))}
                   className="w-full bg-slate-900 border border-slate-700 focus:border-amber-500 rounded-xl px-3 py-2 text-sm font-bold font-mono tabular-nums text-white focus:outline-none"
                 />
               </div>
@@ -320,9 +320,9 @@ export const WorkerModal: React.FC<WorkerModalProps> = ({
                 <input
                   type="number"
                   min="0"
-                  step="25"
-                  value={overtimeHourlyRate}
-                  onChange={(e) => setOvertimeHourlyRate(Number(e.target.value))}
+                  step="any"
+                  value={overtimeHourlyRate || ''}
+                  onChange={(e) => setOvertimeHourlyRate(e.target.value === '' ? 0 : Number(e.target.value))}
                   className="w-full bg-slate-900 border border-slate-700 focus:border-amber-500 rounded-xl px-3 py-2 text-sm font-bold font-mono tabular-nums text-white focus:outline-none"
                 />
               </div>
